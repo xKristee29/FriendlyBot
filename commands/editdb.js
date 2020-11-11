@@ -13,9 +13,11 @@ module.exports = {
         for(const key of keys){
           db.get(key).then(value => {
             console.log(key,' => ',value);
+            message.author.send(key+' => '+value);
           });
         }
         console.log(keys);
+        message.author.send(keys);
       });
     }
   }

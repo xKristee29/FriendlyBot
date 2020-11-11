@@ -13,7 +13,7 @@ module.exports = {
         message.channel.send(value);
         console.log(value);
       });
-      if(args[1] === 'kristee') db.get("IG_KRI").then(value => {
+      else if(args[1] === 'kristee') db.get("IG_KRI").then(value => {
         message.channel.send(value);
         console.log(value);
       });
